@@ -1,0 +1,92 @@
+.col {
+  background-color: #282c34;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: first flex-start;
+  color: white;
+  border: 1px dashed white;
+  border-radius: 8px;
+  padding: 12px;
+  margin: 8px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.teal {
+  color: teal;
+}
+
+.orangered {
+  color: orangered;
+}
+
+.lucida {
+  font-size: 24px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.medium {
+  font-size: 30px;
+}
+
+
+/* Quarter Circles */
+/* the cutout is required to mask the rest of the circle underneath */
+/* the z-index higher on the cutout than the quarters */
+
+.container {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  margin: 16px 16px;
+}
+.quarter {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  /* transition: background-color 0.2s ease-in-out; */
+  z-index: 1;
+}
+/* .quarter:hover {
+  background-color: pink;
+} */
+.tl {
+  top: 0;
+  left: 0;
+  background-color: orangered;
+  border-radius: 100% 0 0 0;
+}
+.tr {
+  top: 0;
+  right: 0;
+  background-color: azure;
+  border-radius: 0 100% 0 0;
+}
+.bl {
+  bottom: 0;
+  left: 0;
+  background-color: azure;
+  border-radius: 0 0 0 100%;
+}
+.br {
+  bottom: 0;
+  right: 0;
+  background-color: orangered;
+  border-radius: 0 0 100% 0;
+}
+.cutout {
+  width: 90%;
+  height: 90%;
+  background-color: #282c34;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  border-radius: 50%;
+  /* border: 2px solid #000; */
+  z-index: 2;
+}
