@@ -17,7 +17,7 @@ const Hello = () => {
     },
     [] // useEffect 2nd argument is dependencies array
   );
-  return "Checked"
+  return "Checked";
   // this component simply returns a string
 };
 
@@ -39,9 +39,7 @@ export default function FirstHooks() {
   );
 }
 
-// export default FirstHooks;
-
-// Note su Hooks
+// Notes about / Note su Hooks
 // NB: useEffect is called after render (like cDM)
 // it can run at every render, once or conditionally
 // effects scheduled with useEffect don’t block the browser from updating the screen.

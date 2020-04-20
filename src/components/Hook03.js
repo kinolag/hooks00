@@ -4,14 +4,11 @@ import styles from "./Hooks.module.css";
 export default function FocusInput() {
   const inputRef = useRef(null);
 
-  useEffect(
-    () => {
-      // focus the input element
-      inputRef.current.focus();
-      // react will set the .current property to the corresponding DOM node
-    },
-    [] // run once
-  );
+  useEffect(() => {
+    // focus the input element
+    inputRef.current.focus();
+    // react will set the .current property to the corresponding DOM node
+  }, []);
 
   return (
     <div className={styles.col}>
